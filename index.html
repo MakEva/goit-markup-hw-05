@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!------------------HEADER------------------------>
     <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
@@ -62,7 +63,18 @@
           Effective Solutions <br />
           for Your Business
         </h1>
-        <button class="hero-btn" type="button">Order Service</button>
+        <button type="button" class="hero-btn" data-modal-open>
+          Order Service
+        </button>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button type="button" class="close-btn" data-modal-close>
+              <svg class="close-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </section>
       <section class="section">
         <!--------------------About------------------->
@@ -119,7 +131,7 @@
           </li>
         </ul>
       </section>
-      <!-----------What are we doing----------------->
+      <!-----------What are we doing---------------->
       <section class="doing">
         <h2 class="title">What are we doing</h2>
         <ul class="doing-list list container">
@@ -341,6 +353,7 @@
         </div>
       </section>
     </main>
+    <!---------------------FOOTER------------------->
     <footer class="footer">
       <div class="container logo-soc">
         <div class="logo-block">
@@ -388,5 +401,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
