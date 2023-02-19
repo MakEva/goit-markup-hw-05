@@ -592,6 +592,9 @@ border-bottom: 1px solid var(--border);
 .example-link:focus .overlay {
     transform: translateY(0);  
 }
+.example-item:hover .overlay {
+    transform: translateY(0);
+}
 .overlay-text {
     font-weight: 400;
     font-size: 16px;
